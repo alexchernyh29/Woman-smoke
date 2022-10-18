@@ -1,0 +1,11 @@
+extends /blocks/layout-default/layout-default
+include /blocks/content/content
+include /blocks/promo/promo
+include /blocks/sharing/sharing
+
+block head
+	- var pageTitle = 'woman-smoke';
+
+block content
+	+promo()
+	+content()

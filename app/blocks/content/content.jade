@@ -1,0 +1,36 @@
+mixin content()
+
+    +b('section').content
+        +e('article').article
+            +e.row
+                +e.col 
+                    +e.info-img
+                        img(src='/images/info-1.jpg')
+                +e.col
+                    +e.wrap 
+                        +e('h4').title <span>Как курение убивает красоту?</span>
+                        +e('p').text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing in lacinia dui, ultrices. Ultrices mi tempus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing in lacinia dui, ultrices. Ultrices mi tempus est.
+                        +e.actions
+                            +e(href='#').btn Подробнее
+        +e('article').article
+            +e.row
+                +e.col 
+                    +e.info-img
+                        img(src='/images/info-2.jpg')
+                +e.col
+                    +e.wrap 
+                        +e('h4').title <span>Редакция woman.ru рассказывает, как отказалась от курения</span>
+                        +e('p').text Сотрудники Woman.ru делятся впечатлениями после отказа от курения
+                        +e.actions
+                            +e(href='#').btn Подробнее
+        +e('article').article
+            +e.row
+                +e.col 
+                    +e.info-img
+                        img(src='/images/info-3.jpg')
+                +e.col
+                    +e.wrap 
+                        +e('h4').title <span>Не бывает безопасных доз алкоголя</span>
+                        +e('p').text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing in lacinia dui, ultrices. Ultrices mi tempus est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing in lacinia dui, ultrices. Ultrices mi tempus est.
+                        +e.actions
+                            +e(href='#').btn Подробнее

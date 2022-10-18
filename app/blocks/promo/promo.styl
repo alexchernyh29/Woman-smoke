@@ -1,0 +1,133 @@
+.promo
+    position relative
+    height 100vh
+    width auto
+    background url('/images/promo-bg.jpg') no-repeat center
+    background-size cover
+
+    +below(768px)
+        height auto
+        background-image url('/images/promo-mob-bg.jpg')
+
+    &__logo
+        position absolute
+        font-size 0
+
+        img
+            width 100%
+
+        &_1
+            width w(385)
+            left w(20)
+            top w(30)
+            +below(768px)
+                width wm(230)
+                left wm(20)
+                top wm(20)
+        
+        &_2
+            width w(123)
+            top w(75)
+            left w(960)
+            +below(768px)
+                width wm(108)
+                right wm(21)
+                left auto
+                top wm(26)
+        
+        &_3
+            width w(311)
+            top w(80)
+            left w(1187)
+            +below(768px)
+                width wm(165)
+                top wm(480)
+                left wm(38)
+        
+        &_4
+            width w(264)
+            top w(90)
+            left w(1538)
+            +below(768px)
+                width wm(120)
+                top wm(492)
+                right wm(33)
+                left auto
+
+    &__content
+        width 50%
+        height 100%
+        padding-top w(250)
+        padding-right w(90)
+        margin 0 0 0 auto
+
+        +below(768px)
+            padding wm(550) wm(25) wm(10)
+            width 100%
+            height auto
+
+    &__title
+        width w(770)
+        font-weight 900
+        color #fff
+        font-size w(95)
+        line-height 1.2
+        letter-spacing 0.05em
+        text-transform uppercase
+        margin-bottom w(70)
+
+        +below(768px)
+            position relative
+            left wm(-25)
+            font-size wm(48)
+            width 100%
+            margin-bottom wm(30)
+
+        span
+            background rgba(230, 23, 23, 1)
+    
+    &__text
+        font-family $ff-montserrat
+        font-style normal
+        font-weight normal
+        font-size w(21)
+        line-height w(25)
+        letter-spacing 0.05em
+        margin-bottom w(35)
+        +below(768px)
+            font-size wm(16)
+            line-height wm(19)
+            margin-bottom wm(20)
+
+    &__actions
+        margin-top w(60)
+        +below(768px)
+            text-align center
+            margin-top wm(30)
+
+    &__btn
+        display inline-block
+        width w(60)
+        height w(60)
+        font-size 0
+        background transparent
+        border 0
+        transition opacity .3s
+
+        +below(768px)
+            width wm(45)
+            height wm(45)
+
+        &:hover
+            opacity .7
+
+        img
+            width 100%
+    
+    &__sharing
+        position absolute
+        bottom w(50)
+        left w(50)
+
+        +below(768px)
+            display none

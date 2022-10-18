@@ -1,0 +1,143 @@
+.content
+    position relative
+    background-color #fff
+    
+    &__article
+        min-height w(660)
+        overflow hidden
+        +below(768px)
+            min-height auto
+
+        &:not(:first-child)
+            margin-top -30px
+            +below(768px)
+                margin-top 0
+
+        &:nth-child(2n)
+            position relative
+            background rgba(227, 0, 11, 0.1)
+            .content__row
+                flex-direction row-reverse
+                +below(768px)
+                    flex-direction column
+            .content__wrap
+                padding 0 w(70) w(20) w(150)
+                +below(768px)
+                    padding wm(25) wm(20) wm(40)
+    &__row
+        position relative
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        align-items stretch
+        +below(768px)
+            flex-direction column
+
+    &__col
+        width 50%
+        height 100%
+        +below(768px)
+            width 100%
+            height auto
+    
+    &__wrap
+        position relative
+        padding 0 w(70) w(20)
+        +below(768px)
+            padding wm(25) wm(20) wm(40)
+
+    &__title
+        position relative
+        left w(-150)
+        margin-top w(100)
+        margin-bottom w(50)
+        font-family $ff-montserrat
+        font-style normal
+        font-size w(52)
+        line-height 1.5
+        letter-spacing 0.05em
+        text-transform uppercase
+        color $c-white
+        width 120%
+        +below(768px)
+            font-size wm(30)
+            left wm(-20)
+            padding 0
+            margin-top 0
+            margin-bottom wm(30)
+            width 100%
+        &::before
+            content ''
+            position absolute
+            bottom w(-1)
+            top w(-2)
+            left w(-10)
+            width w(10)
+            background-color #e61717
+
+        span
+            padding 0 w(25)
+            display inline
+            background-color #e61717
+            box-shadow: w(-10) 0 0 #e61717, w(10) 0 0 #e61717
+            padding: w(10) 0
+            color #FFFFFF
+
+    &__text
+        font-family $ff-montserrat
+        font-style normal
+        font-weight normal
+        font-size w(21)
+        line-height w(26)
+        letter-spacing 0.05em
+        color $c-black
+        +below(768px)
+            font-size wm(16)
+            line-height wm(18)
+    
+    &__btn
+        margin-top w(25)
+        background-color $c-white
+        border w(1) solid $c-red
+        box-sizing border-box
+        border-radius w(50)
+        font-family $ff-montserrat
+        font-style normal
+        font-weight bold
+        font-size w(21)
+        line-height w(20)
+        text-align center
+        letter-spacing 0.1em
+        color $c-red
+        padding w(20) w(40)
+        text-transform uppercase
+        width w(300)
+        display inline-block
+        text-decoration none
+        transition background-color .3s, color .3s
+
+        &:hover
+            background-color $c-red
+            color $c-white
+
+        +below(768px)
+            font-size wm(21)
+            line-height wm(20)
+            padding  wm(20) wm(5)
+            border 1px solid $c-red
+            box-sizing border-box
+            border-radius 50px
+            width wm(240)
+            margin-top wm(20)
+
+    &__info-img
+        width 100%
+        font-size 0
+
+        img
+            width 100%
+    
+    &__actions
+        text-align left
+        +below(768px)
+            text-align center
